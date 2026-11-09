@@ -1,0 +1,464 @@
+{
+  "id": "e8ee0d2e-7d19-417b-9565-0e3137944859",
+  "components": [
+    {
+      "title": "شبكة المجموعات المميزة",
+      "icon": "sicon-layout-grid-rearrange",
+      "name": "categories-grid",
+      "key": "2b4c6e8a-0f1e-4d3c-9b8a-7e6f5d4c3b2a",
+      "image": "https://skytheme-demo.myshopify.com/cdn/shop/files/cat1_5.webp?v=1790235670&width=600",
+      "fields": [
+        {
+          "id": "show_header",
+          "icon": "sicon-check-circle",
+          "type": "boolean",
+          "label": "إظهار الهيدر",
+          "format": "switch",
+          "required": false,
+          "value": true,
+          "selected": true
+        },
+        {
+          "id": "section_title",
+          "icon": "sicon-format-text-alt",
+          "type": "string",
+          "label": "عنوان القسم",
+          "format": "text",
+          "required": false,
+          "value": "اكتشف التشكيلات المميزة",
+          "placeholder": "اكتشف التشكيلات المميزة",
+          "multilanguage": true
+        },
+        {
+          "id": "show_button",
+          "icon": "sicon-check-circle",
+          "type": "boolean",
+          "label": "إظهار الزر",
+          "format": "switch",
+          "required": false,
+          "value": true,
+          "selected": false
+        },
+        {
+          "id": "button_text",
+          "icon": "sicon-format-text-alt",
+          "type": "string",
+          "label": "نص الزر",
+          "format": "text",
+          "required": false,
+          "value": "عرض كل المجموعات",
+          "multilanguage": true
+        },
+        {
+          "id": "button_url",
+          "icon": "sicon-link",
+          "type": "string",
+          "label": "رابط الزر",
+          "format": "url",
+          "required": false,
+          "value": "",
+          "placeholder": "https://..."
+        },
+        {
+          "id": "heading_color",
+          "icon": "sicon-color-palette",
+          "type": "string",
+          "format": "color",
+          "inputType": "color",
+          "label": "لون عنوان القسم",
+          "required": false,
+          "value": "#111827"
+        },
+        {
+          "id": "card_title_color",
+          "icon": "sicon-color-palette",
+          "type": "string",
+          "format": "color",
+          "inputType": "color",
+          "label": "لون نصوص التصنيفات",
+          "required": false,
+          "value": "#ffffff"
+        },
+        {
+          "id": "button_bg_color",
+          "icon": "sicon-color-palette",
+          "type": "string",
+          "format": "color",
+          "inputType": "color",
+          "label": "لون خلفية الزر",
+          "required": false,
+          "value": "#111111"
+        },
+        {
+          "id": "button_text_color",
+          "icon": "sicon-color-palette",
+          "type": "string",
+          "format": "color",
+          "inputType": "color",
+          "label": "لون نص الزر",
+          "required": false,
+          "value": "#ffffff"
+        },
+        {
+          "id": "section_bg_color",
+          "icon": "sicon-color-palette",
+          "type": "string",
+          "format": "color",
+          "inputType": "color",
+          "label": "لون خلفية القسم",
+          "required": false,
+          "value": "#ffffff"
+        },
+        {
+          "id": "row_height",
+          "icon": "sicon-calculator",
+          "type": "number",
+          "label": "ارتفاع الصفوف في الكمبيوتر (px)",
+          "format": "number",
+          "required": false,
+          "value": 160
+        },
+        {
+          "id": "desktop_row1_count",
+          "icon": "sicon-calculator",
+          "type": "number",
+          "label": "عدد بطاقات الصف الأول (كمبيوتر)",
+          "format": "number",
+          "required": false,
+          "value": 6
+        },
+        {
+          "id": "block_radius",
+          "icon": "sicon-calculator",
+          "type": "number",
+          "label": "انحناء الزوايا (px)",
+          "format": "number",
+          "required": false,
+          "value": 12
+        },
+        {
+          "id": "container_width",
+          "icon": "sicon-calculator",
+          "type": "number",
+          "label": "عرض الحاوية (%)",
+          "format": "slider",
+          "inputType": "range",
+          "required": false,
+          "minimum": 50,
+          "maximum": 100,
+          "step": 1,
+          "value": 100
+        },
+        {
+          "id": "mobile_columns",
+          "icon": "sicon-calculator",
+          "type": "number",
+          "label": "عدد الأعمدة في الجوال",
+          "format": "number",
+          "required": false,
+          "value": 3
+        },
+        {
+          "id": "mobile_layout",
+          "icon": "sicon-layout-grid",
+          "type": "items",
+          "source": "Manual",
+          "label": "طريقة العرض في الجوال",
+          "format": "dropdown-list",
+          "required": false,
+          "options": [
+            {
+              "label": "شبكة (Grid)",
+              "value": "grid",
+              "key": "grid"
+            },
+            {
+              "label": "سلايدر متحرك (Swiper Slider)",
+              "value": "slider",
+              "key": "slider"
+            }
+          ],
+          "selected": [
+            {
+              "label": "شبكة (Grid)",
+              "value": "grid"
+            }
+          ]
+        },
+        {
+          "id": "hide_on_mobile",
+          "icon": "sicon-iphone",
+          "type": "boolean",
+          "label": "إخفاء القسم في الجوال (Mobile)",
+          "format": "switch",
+          "required": false,
+          "value": false
+        },
+        {
+          "id": "items",
+          "type": "collection",
+          "format": "collection",
+          "required": true,
+          "minLength": 1,
+          "maxLength": 30,
+          "item_label": "التصنيفات",
+          "value": [
+            {
+              "card_type": false,
+              "title": "تيشيرتات",
+              "image": "https://cdn.files.salla.network/other/2070588102/9a786fc9-9711-4ac3-af68-e8c34fc00b14-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "تيشيرتات"
+            },
+            {
+              "card_type": false,
+              "title": "قمصان",
+              "image": "https://cdn.files.salla.network/other/2070588102/8c2ebba7-954e-4a98-92e5-9c569103a82c-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "قمصان"
+            },
+            {
+              "card_type": false,
+              "title": "بناطيل",
+              "image": "https://cdn.files.salla.network/other/2070588102/046fae12-5ca5-4564-a243-1dc9784b1b2f-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "بناطيل"
+            },
+            {
+              "card_type": false,
+              "title": "جينس",
+              "image": "https://cdn.files.salla.network/other/2070588102/291fe7a4-b33d-4d4b-b630-69f2ada44b8a-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "جينس"
+            },
+            {
+              "card_type": false,
+              "title": "فساتين",
+              "image": "https://cdn.files.salla.network/other/2070588102/d5debf21-c18f-4a5a-87da-d2b6f458376a-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "فساتين"
+            },
+            {
+              "card_type": false,
+              "title": "جاكيتات ومعاطف",
+              "image": "https://cdn.files.salla.network/other/2070588102/3c0ca0a2-776c-40ac-b8a5-1d8c193b80e6-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "جاكيتات ومعاطف"
+            },
+            {
+              "card_type": false,
+              "title": "احذية",
+              "image": "https://cdn.files.salla.network/other/2070588102/5bc26de5-2253-4cce-b36c-457569cf4c3c-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "احذية"
+            },
+            {
+              "card_type": false,
+              "title": "ملابس كاجوال",
+              "image": "https://cdn.files.salla.network/other/2070588102/69691b3f-38f5-44ea-a2bb-24106adc97ad-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1.2,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "ملابس كاجوال"
+            },
+            {
+              "card_type": true,
+              "title": "LOGO",
+              "image": "https://skytheme-demo.myshopify.com/cdn/shop/files/preview_images/e932152ebad14476a49d44387417b987.thumbnail.0000000000_1100x.jpg?v=1790236176",
+              "banner_video_url": "https://skytheme-demo.myshopify.com/cdn/shop/videos/c/vp/e932152ebad14476a49d44387417b987/e932152ebad14476a49d44387417b987.HD-1080p-4.8Mbps-95403904.mp4?v=0",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1.4,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": true,
+              "section_title": "LOGO"
+            },
+            {
+              "card_type": false,
+              "title": "اكسسوارات",
+              "image": "https://cdn.files.salla.network/other/2070588102/7226ccd0-003e-4754-b81e-50ae53847477-original.png",
+              "banner_video_url": "",
+              "source_url": "",
+              "source_url__type": "custom",
+              "flex_width": 1.4,
+              "mobile_flex_width": 1,
+              "hide_on_mobile": false,
+              "section_title": "اكسسوارات"
+            }
+          ],
+          "fields": [
+            {
+              "id": "card_type",
+              "icon": "sicon-check-circle",
+              "type": "boolean",
+              "label": "بانر نص/فيديو مفرغ (Banner / LOGO)",
+              "format": "checkbox",
+              "required": false,
+              "description": "تفعيل هذه البطاقة كبانر نص وفيديو مفرغ بدلاً من تصنيف عادي",
+              "value": false
+            },
+            {
+              "type": "string",
+              "icon": "sicon-format-text-alt",
+              "id": "section_title",
+              "required": true,
+              "format": "text",
+              "label": "العنوان / نص البانر المفرغ (LOGO)",
+              "multilanguage": true
+            },
+            {
+              "type": "string",
+              "icon": "sicon-image-landscape",
+              "id": "image",
+              "required": false,
+              "format": "image",
+              "label": "صورة التصنيف / صورة بديلة للفيديو",
+              "value": "https://cdn.files.salla.network/other/2070588102/9a786fc9-9711-4ac3-af68-e8c34fc00b14-original.png"
+            },
+            {
+              "id": "banner_video_url",
+              "icon": "sicon-video",
+              "type": "string",
+              "label": "رابط فيديو البانر (في حال كان نوع البطاقة بانر)",
+              "format": "url",
+              "required": false
+            },
+            {
+              "id": "source_url",
+              "icon": "sicon-shopping-bag",
+              "type": "items",
+              "label": "Multi Conditional Sources",
+              "format": "variable-list",
+              "required": false,
+              "source": "custom",
+              "selected": [
+                {
+                  "label": "Article",
+                  "key": "blog_articles",
+                  "value": "blog_articles"
+                }
+              ],
+              "sources": [
+                {
+                  "label": "Product",
+                  "key": "products",
+                  "value": "products"
+                },
+                {
+                  "label": "Category",
+                  "key": "categories",
+                  "value": "categories"
+                },
+                {
+                  "label": "Brand",
+                  "key": "brands",
+                  "value": "brands"
+                },
+                {
+                  "label": "Page",
+                  "key": "pages",
+                  "value": "pages"
+                },
+                {
+                  "label": "Article",
+                  "key": "blog_articles",
+                  "value": "blog_articles"
+                },
+                {
+                  "label": "Blog Category",
+                  "key": "blog_categories",
+                  "value": "blog_categories"
+                },
+                {
+                  "label": "Offer",
+                  "key": "offers_link",
+                  "value": "offers_link"
+                },
+                {
+                  "label": "Brand Link",
+                  "key": "brands_link",
+                  "value": "brands_link"
+                },
+                {
+                  "label": "Blog Link",
+                  "key": "blog_link",
+                  "value": "blog_link"
+                },
+                {
+                  "label": "Custom",
+                  "key": "custom",
+                  "value": "custom"
+                }
+              ]
+            },
+            {
+              "type": "number",
+              "icon": "sicon-calculator",
+              "id": "flex_width",
+              "required": false,
+              "format": "number",
+              "label": "العرض النسبي (كمبيوتر)",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "icon": "sicon-calculator",
+              "id": "mobile_flex_width",
+              "required": false,
+              "format": "number",
+              "label": "العرض النسبي (جوال)",
+              "value": 1
+            },
+            {
+              "id": "hide_on_mobile",
+              "icon": "sicon-iphone",
+              "type": "boolean",
+              "format": "switch",
+              "label": "إخفاء البطاقة في الجوال",
+              "value": false
+            }
+          ],
+          "label": "قائمة التصنيفات والبانرات"
+        }
+      ]
+    }
+  ]
+}
